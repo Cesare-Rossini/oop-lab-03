@@ -18,7 +18,11 @@ class ComplexNum {
          * Implementare il metodo in modo che restituisca true se e solo se il
          * numero complesso è uguale al parametro num passato in input
          */
-        return (this.re == num.re && this.im == this.im);
+        boolean check = false;
+        if (this.re == num.re && this.im == this.im) {
+            check = true;
+        } 
+        return check;
     }
 
     void add(ComplexNum num) {
