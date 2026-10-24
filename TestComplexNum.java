@@ -30,5 +30,32 @@ class TestComplexNum {
        *
        * 11) Controllare se l'output corrisponde a quanto preventivato
        */
+
+      ComplexNum c1 = new ComplexNum();
+      ComplexNum c2 = new ComplexNum();
+      ComplexNum c3 = new ComplexNum();
+      ComplexNum c4 = new ComplexNum();
+
+      c1.build(3, 5);
+      c2.build(7, 4);
+      c3.build(-2, 3);
+      c4.build(-2, 3);
+
+      IO.println(c1.toStringRep());
+      IO.println(c2.toStringRep());
+      IO.println(c3.toStringRep());
+      IO.println(c4.toStringRep());
+
+      c1.add(c2);
+      c2.add(c4);
+
+      IO.println(c1.toStringRep());
+      IO.println(c2.toStringRep());
+      IO.println(c3.toStringRep());
+      IO.println(c4.toStringRep());
+
+      c3.equals(c1);
+      c3.equals(c2);
+      c3.equals(c4);
     }
 }
