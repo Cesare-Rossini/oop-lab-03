@@ -54,8 +54,8 @@ class TestComplexNum {
       IO.println(c3.toStringRep());
       IO.println(c4.toStringRep());
 
-      c3.equals(c1);
-      c3.equals(c2);
-      c3.equals(c4);
+      IO.println(c3.equals(c1));
+      IO.println(c3.equals(c2));
+      IO.println(c3.equals(c4));
     }
 }
