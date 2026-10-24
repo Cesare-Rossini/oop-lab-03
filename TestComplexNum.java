@@ -37,7 +37,7 @@ class TestComplexNum {
       ComplexNum c4 = new ComplexNum();
 
       c1.build(3, 5);
-      c2.build(7, 4);
+      c2.build(7, -4);
       c3.build(-2, 3);
       c4.build(-2, 3);
 
@@ -54,8 +54,8 @@ class TestComplexNum {
       IO.println(c3.toStringRep());
       IO.println(c4.toStringRep());
 
-      IO.println(c3.equals(c1));
-      IO.println(c3.equals(c2));
-      IO.println(c3.equals(c4));
+      IO.println(c3.isEqualTo(c1));
+      IO.println(c3.isEqualTo(c2));
+      IO.println(c3.isEqualTo(c4));
     }
 }

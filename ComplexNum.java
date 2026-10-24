@@ -19,7 +19,7 @@ class ComplexNum {
          * numero complesso è uguale al parametro num passato in input
          */
         boolean check = false;
-        if (this.re == num.re && this.im == this.im) {
+        if (this.re == num.re && this.im == num.im) {
             check = true;
         } 
         return check;
@@ -39,6 +39,6 @@ class ComplexNum {
          * Implementare il metodo in modo che restituisca una rappresentazione
          * testuale del numero complesso
          */
-        return "" + this.re + "." + this.im + "i";
+        return "" + this.re + " + " + this.im + "i";
     }
 }
